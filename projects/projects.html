@@ -10,19 +10,23 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
+              <a
+                class="nav-link not-active"
+                aria-current="page"
+                href="../index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./projects.html">Projects</a>
+              <a class="nav-link" href="./projects.html">Projects</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -39,7 +43,7 @@
         </div>
       </div>
     </nav>
-    <section class="margin">
+    <section class="margin projects">
       <div class="pacman">
         <div class="card">
           <img
@@ -48,12 +52,14 @@
             alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">PacMan</h5>
+            <h5 class="titles">PacMan</h5>
             <p class="card-text">
               The task in this activity was to create a pacman on demand (button
               click) and move these pacmen across the page.
             </p>
-            <a href="https://github.com/osunacj/Pacman" class="btn btn-primary"
+            <a
+              href="https://github.com/osunacj/Pacman"
+              class="btn btn-outline-success"
               >Code Repo</a
             >
           </div>
@@ -63,7 +69,7 @@
         <div class="card">
           <img src="map.JPG" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Map</h5>
+            <h5 class="titles">Map</h5>
             <p class="card-text">
               In this Project, the MBTA bus data was used to determine stops
               between Harvard and MIT. Then, an animated marker was added on the
@@ -71,7 +77,7 @@
             </p>
             <a
               href="https://github.com/osunacj/MapAnimation"
-              class="btn btn-primary"
+              class="btn btn-outline-success"
               >Code Repo</a
             >
           </div>
@@ -81,12 +87,14 @@
         <div class="card">
           <img src="eyes.JPG" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Eyes</h5>
+            <h5 class="titles">Eyes</h5>
             <p class="card-text">
               The goal of this project was to interactively move the eyes based
               on the mouse position.
             </p>
-            <a href="https://github.com/osunacj/Eyes" class="btn btn-primary"
+            <a
+              href="https://github.com/osunacj/Eyes"
+              class="btn btn-outline-success"
               >Code Repo</a
             >
           </div>
@@ -95,18 +103,3 @@
     </section>
   </body>
 </html>
-<style>
-  .margin {
-    margin: 20px;
-  }
-
-  section {
-    display: grid;
-    grid-template-areas: "pacman map eyes";
-    gap: 2rem;
-  }
-
-  body {
-    background-color: #878880;
-  }
-</style>
